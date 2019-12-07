@@ -4,17 +4,27 @@
   "description": "A demo project for testcafe-cucumber",
   "main": "index.js",
   "scripts": {
-    "test-chrome": "./node_modules/.bin/cucumber-js.cmd  --format json:./reports/report.json --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\"",
-    "test-chrome-hl": "./node_modules/.bin/cucumber-js.cmd  --format json:./reports/report.json --world-parameters \"{\\\"browser\\\": \\\"chrome:headless\\\"}\"",
+    "test-chrome": "cucumber-js.cmd  --format json:./reports/report.json --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\"",
+    "test-chrome-hl": "cucumber-js.cmd  --format json:./reports/report.json --world-parameters \"{\\\"browser\\\": \\\"chrome:headless\\\"}\"",
     "test-report": "node report-generator.js"
   },
   "author": "Max Harding",
   "license": "ISC",
   "devDependencies": {
-    "cucumber": "^6.0.5",
-    "testcafe": "^1.7.0",
+    "base64-img": "^1.0.4",
+    "cucumber": "^4.2.1",
+    "testcafe": "1.4.2",
     "eslint": "^4.19.1",
-    "npm": "^6.0.0",
-    "base64-img": "^1.0.4"
-  }
+    "multiple-cucumber-html-reporter": "^1.10.1",
+    "npm": "^6.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxharding4/testcafe-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxharding4/testcafe-demo/issues"
+  },
+  "homepage": "https://github.com/maxharding4/testcafe-demo#readme"
 }

@@ -18,8 +18,7 @@ function createTestFile() {
         'fixture("fixture")\n' +
 
         'test\n' +
-        '("test", testControllerHolder.capture)\n' +
-        '.after(async t => {await errorHandling.ifErrorTakeScreenshot(t)})');
+        '("test", testControllerHolder.capture)')
 }
 
 function runTest(iteration, browser) {
@@ -91,8 +90,8 @@ const getIsTestCafeError = function() {
     return isTestCafeError;
 };
 
-const getAttachScreenshotToReport = function() {
-    return attachScreenshotToReport;
+const getAttachScreenshotToReport = function(path) {
+    return attachScreenshotToReport(path);
 };
 
 exports.getIsTestCafeError = getIsTestCafeError;

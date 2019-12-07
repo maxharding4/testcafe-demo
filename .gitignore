@@ -7,7 +7,7 @@ reports/screenshots
 # Added empty reports folder
 reports/*
 !reports/.gitkeep
-!reports/assets
+reports/assets
 #VSCode files
 .vscode/*
 
