@@ -1,0 +1,24 @@
+# Dependency directory
+node_modules
+
+# Screenshots
+reports/screenshots
+
+# Added empty reports folder
+reports/*
+!reports/.gitkeep
+!reports/assets
+#VSCode files
+.vscode/*
+
+.env
+#Linter
+.eslintrc.json
+
+package-lock.json
+yarn.lock
+yarn-error.log
+
+node_modules
+
+test.js
